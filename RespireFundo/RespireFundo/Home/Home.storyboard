@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N5y-iG-3bP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Respire Fundo-->
+        <scene sceneID="qo0-kG-zvB">
+            <objects>
+                <viewController id="FKT-yJ-s2M" customClass="HomeViewController" customModule="RespireFundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1Y-Qy-XWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que você Procura?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-I4-VNO">
+                                <rect key="frame" x="26" y="112" width="168" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUE-0F-cPa">
+                                <rect key="frame" x="26" y="176" width="76" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV4-VU-ELs">
+                                <rect key="frame" x="33" y="216" width="348" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="qNj-Rt-gSD"/>
+                                    <constraint firstAttribute="height" constant="134" id="xkV-fy-jHP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Eventos" title=""/>
+                                <connections>
+                                    <segue destination="xVh-zL-ZXF" kind="show" id="VRy-Ta-fh8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denúncias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNE-yo-Lwj">
+                                <rect key="frame" x="26" y="381" width="101" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOf-bd-L7w">
+                                <rect key="frame" x="33" y="421" width="348" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="0GZ-v6-Cz1"/>
+                                    <constraint firstAttribute="width" constant="348" id="tvP-hN-9KN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Denuncias2"/>
+                                <connections>
+                                    <segue destination="FMC-dp-9gl" kind="show" id="0ey-l5-NAA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugestões" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2J-sW-O08">
+                                <rect key="frame" x="26" y="586" width="101" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIw-mg-ulk">
+                                <rect key="frame" x="33" y="626" width="348" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Ql4-QG-W54"/>
+                                    <constraint firstAttribute="width" constant="348" id="hcq-48-bFV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Sugestoes"/>
+                                <connections>
+                                    <segue destination="sTi-mY-44a" kind="show" id="NiN-p7-JbJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EbT-rL-VVQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oNE-yo-Lwj" firstAttribute="leading" secondItem="EbT-rL-VVQ" secondAttribute="leading" constant="26" id="2ti-lf-5uj"/>
+                            <constraint firstItem="GOg-I4-VNO" firstAttribute="leading" secondItem="EbT-rL-VVQ" secondAttribute="leading" constant="26" id="5um-FR-Hfd"/>
+                            <constraint firstItem="CUE-0F-cPa" firstAttribute="top" secondItem="GOg-I4-VNO" secondAttribute="bottom" constant="42" id="7cy-5s-4VS"/>
+                            <constraint firstItem="oNE-yo-Lwj" firstAttribute="top" secondItem="PV4-VU-ELs" secondAttribute="bottom" constant="31" id="9Ja-BZ-KyZ"/>
+                            <constraint firstItem="CUE-0F-cPa" firstAttribute="leading" secondItem="EbT-rL-VVQ" secondAttribute="leading" constant="26" id="DAu-ax-59B"/>
+                            <constraint firstItem="PV4-VU-ELs" firstAttribute="centerX" secondItem="h1Y-Qy-XWf" secondAttribute="centerX" id="I1H-dw-pUs"/>
+                            <constraint firstItem="T2J-sW-O08" firstAttribute="top" secondItem="SOf-bd-L7w" secondAttribute="bottom" constant="31" id="L4h-Cu-aug"/>
+                            <constraint firstItem="SOf-bd-L7w" firstAttribute="top" secondItem="oNE-yo-Lwj" secondAttribute="bottom" constant="13" id="Lk0-Be-G5y"/>
+                            <constraint firstItem="T2J-sW-O08" firstAttribute="leading" secondItem="EbT-rL-VVQ" secondAttribute="leading" constant="26" id="RrC-CJ-7N5"/>
+                            <constraint firstItem="nIw-mg-ulk" firstAttribute="top" secondItem="T2J-sW-O08" secondAttribute="bottom" constant="13" id="YIV-Tv-jfR"/>
+                            <constraint firstItem="PV4-VU-ELs" firstAttribute="top" secondItem="CUE-0F-cPa" secondAttribute="bottom" constant="13" id="hcs-GW-Spk"/>
+                            <constraint firstItem="SOf-bd-L7w" firstAttribute="centerX" secondItem="h1Y-Qy-XWf" secondAttribute="centerX" id="ods-yN-N0b"/>
+                            <constraint firstItem="nIw-mg-ulk" firstAttribute="centerX" secondItem="h1Y-Qy-XWf" secondAttribute="centerX" id="p3M-y5-Hcm"/>
+                            <constraint firstItem="GOg-I4-VNO" firstAttribute="top" secondItem="EbT-rL-VVQ" secondAttribute="top" constant="24" id="w9Q-v6-PTh"/>
+                            <constraint firstItem="SOf-bd-L7w" firstAttribute="centerX" secondItem="h1Y-Qy-XWf" secondAttribute="centerX" id="yY4-gP-RLl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Respire Fundo" id="TkA-rc-r6f"/>
+                    <connections>
+                        <outlet property="button1" destination="PV4-VU-ELs" id="6if-PK-fZq"/>
+                        <outlet property="button2" destination="SOf-bd-L7w" id="twQ-LR-ccC"/>
+                        <outlet property="button3" destination="nIw-mg-ulk" id="bGA-IO-UVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfO-0J-4Wb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="129"/>
+        </scene>
+        <!--Eventos-->
+        <scene sceneID="45M-6P-1jG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Eventos" id="xVh-zL-ZXF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UtV-IW-4oQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPw-aZ-0oH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="-97"/>
+        </scene>
+        <!--Denuncias-->
+        <scene sceneID="IH7-gk-uyJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Denuncias" id="FMC-dp-9gl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sKK-fB-chY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdL-pt-LAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469" y="100"/>
+        </scene>
+        <!--Sugestoes-->
+        <scene sceneID="GRX-4g-ha5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sugestoes" id="sTi-mY-44a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wd9-QO-aV9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMV-yS-djK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="309"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="4aY-1T-oWZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N5y-iG-3bP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="d6P-F1-DnN"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o87-Hy-GRP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FKT-yJ-s2M" kind="relationship" relationship="rootViewController" id="nBR-tE-yo6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHZ-dd-Fxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Denuncias2" width="348" height="134"/>
+        <image name="Eventos" width="348" height="134"/>
+        <image name="Sugestoes" width="348" height="134"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+    </resources>
+</document>
